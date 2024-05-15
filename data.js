@@ -45,7 +45,7 @@ export const blogs = [
     },
 
     {
-        id: 8,
+        id: 6,
         userId: 2,
         title: 'The Impact of Artificial Intelligence on Healthcare',
         img: 'https://images.unsplash.com/photo-1666887360974-5cab0bd3ef52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -54,7 +54,7 @@ export const blogs = [
     },
 
     {
-        id: 16,
+        id: 7,
         userId: 3,
         title: 'The Future of Retail: Trends and Innovations',
         img: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGZ1dHVyZSUyMG9mJTIwcmV0YWlsJTIwc2FsZXN8ZW58MHx8MHx8fDA%3D',
@@ -63,7 +63,7 @@ export const blogs = [
     },
 
     {
-        id: 6,
+        id: 8,
         userId: 2,
         title: 'The Evolution of Cloud Computing: Trends and Future Outlook',
         img: 'https://images.unsplash.com/photo-1629904853716-f0bc54eea481?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D',
@@ -72,7 +72,7 @@ export const blogs = [
     },
 
     {
-        id: 14,
+        id: 9,
         userId: 1,
         title: 'The Role of Data Analytics in Healthcare: Improving Patient Outcomes',
         img: 'https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -100,3 +100,188 @@ export const users = [
         img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
 ]
+
+
+export const comments = [
+    {
+        id: 1,
+        desc: 'This blog is helpful',
+        userId: 1,
+        postId: 1
+    },
+    {
+        id: 2,
+        desc: 'Great insights!',
+        userId: 2,
+        postId: 1
+    },
+    {
+        id: 3,
+        desc: 'Interesting read',
+        userId: 3,
+        postId: 1
+    },
+    {
+        id: 4,
+        desc: 'Thanks for sharing!',
+        userId: 1,
+        postId: 2
+    },
+    {
+        id: 5,
+        desc: 'I learned a lot from this post',
+        userId: 2,
+        postId: 2
+    },
+    {
+        id: 6,
+        desc: 'Looking forward to more content',
+        userId: 3,
+        postId: 2
+    },
+    {
+        id: 7,
+        desc: 'Well written!',
+        userId: 1,
+        postId: 3
+    },
+    {
+        id: 8,
+        desc: 'Keep up the good work',
+        userId: 2,
+        postId: 3
+    },
+    {
+        id: 9,
+        desc: 'I appreciate the effort put into this',
+        userId: 3,
+        postId: 3
+    },
+    {
+        id: 10,
+        desc: 'Informative post!',
+        userId: 1,
+        postId: 4
+    },
+    {
+        id: 11,
+        desc: 'I agree with your points',
+        userId: 2,
+        postId: 4
+    },
+    {
+        id: 12,
+        desc: 'This helped me solve my problem',
+        userId: 3,
+        postId: 4
+    },
+    {
+        id: 13,
+        desc: 'Great job!',
+        userId: 1,
+        postId: 5
+    },
+    {
+        id: 14,
+        desc: 'I didn\'t know about this before',
+        userId: 2,
+        postId: 5
+    },
+    {
+        id: 15,
+        desc: 'This is valuable information',
+        userId: 3,
+        postId: 5
+    },
+    {
+        id: 16,
+        desc: 'Fantastic post!',
+        userId: 1,
+        postId: 6
+    },
+    {
+        id: 17,
+        desc: 'I enjoyed reading this',
+        userId: 2,
+        postId: 6
+    },
+    {
+        id: 18,
+        desc: 'Thank you for sharing your knowledge',
+        userId: 3,
+        postId: 6
+    },
+    {
+        id: 19,
+        desc: 'Insightful content!',
+        userId: 1,
+        postId: 7
+    },
+    {
+        id: 20,
+        desc: 'This gave me a new perspective',
+        userId: 2,
+        postId: 7
+    },
+    {
+        id: 21,
+        desc: 'I\'ll definitely use this in my work',
+        userId: 3,
+        postId: 7
+    },
+    {
+        id: 22,
+        desc: 'Very helpful, thank you!',
+        userId: 1,
+        postId: 8
+    },
+    {
+        id: 23,
+        desc: 'I\'m impressed by the quality of content',
+        userId: 2,
+        postId: 8
+    },
+    {
+        id: 24,
+        desc: 'This answered my questions perfectly',
+        userId: 3,
+        postId: 8
+    },
+    {
+        id: 25,
+        desc: 'Brilliant post!',
+        userId: 1,
+        postId: 9
+    },
+    {
+        id: 26,
+        desc: 'This deserves more recognition',
+        userId: 2,
+        postId: 9
+    },
+    {
+        id: 27,
+        desc: 'I\'ll share this with my friends',
+        userId: 3,
+        postId: 9
+    },
+    {
+        id: 28,
+        desc: 'Excellent work!',
+        userId: 1,
+        postId: 10
+    },
+    {
+        id: 29,
+        desc: 'This is exactly what I was looking for',
+        userId: 2,
+        postId: 10
+    },
+    {
+        id: 30,
+        desc: 'I\'m impressed by the depth of analysis',
+        userId: 3,
+        postId: 10
+    },
+];
+

@@ -1,4 +1,6 @@
-import { blogs, users } from '@/data'
+import CommentBox from '@/components/CommentBox';
+import UserCard from '@/components/UserCard';
+import { blogs, comments, users } from '@/data'
 import Image from 'next/image'
 
 const SingleBlog = ({ params }) => {
@@ -7,6 +9,9 @@ const SingleBlog = ({ params }) => {
     const blog = blogs.find(blog => blog.id === parseInt(id));
 
     const user = users.find(user => user.id === blog.userId);
+
+    const comment = comments.filter(comment => comment.postId === blog.id);
+    console.log(comment);
 
     return (
         <main className='w-full px-4 py-12'>
@@ -21,12 +26,9 @@ const SingleBlog = ({ params }) => {
                 </h1>
 
                 <div className='flex items-center gap-4'>
-                    <div className='w-10 h-10 overflow-hidden rounded-full'>
-                        <Image src={user.img} alt='avatar' width={40} height={40} className='rounded-full' />
-                    </div>
+                    <UserCard user={user} />
 
-                    <span className='text-gray-400 text-sm font-medium'>{user.name}</span>
-                    <span className='text-gray-400 text-sm font-medium'>August 20, 2022</span>
+                    <span className='text-gray-500 text-sm font-medium'>August 20, 2022</span>
                 </div>
             </div>
 
@@ -38,6 +40,32 @@ const SingleBlog = ({ params }) => {
                 <div dangerouslySetInnerHTML={{ __html: blog.desc }} />
             </div>
 
+
+            {/* comments */}
+            <div className='mt-12'>
+                <span className='text-3xl font-semibold'>
+                    Comments
+                </span>
+
+                <CommentBox />
+
+                {comment.map(comment => (
+                    <div key={comment.id} className='mt-6'>
+
+                        {users.map(user => {
+                            if (user.id === comment.userId) {
+                                return (
+                                    <UserCard user={user} />
+                                );
+                            }
+                        })}
+
+                        <p className='text-gray-100 pl-12 -mt-2'>{comment.desc}</p>
+
+                    </div>
+                ))}
+
+            </div>
 
         </main>
     )

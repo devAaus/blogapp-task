@@ -2,6 +2,7 @@ import { users } from '@/data';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import UserCard from './UserCard';
 
 const BlogCard = ({ b }) => {
 
@@ -27,11 +28,7 @@ const BlogCard = ({ b }) => {
                 </Link>
 
                 <div className='absolute bottom-4 flex items-center gap-4'>
-                    <div className='w-10 h-10 overflow-hidden rounded-full'>
-                        <Image src={user.img} alt='avatar' width={40} height={40} className='rounded-full' />
-                    </div>
-
-                    <span className='text-gray-400 text-sm '>{user.name}</span>
+                    <UserCard user={user} />
                     <span className='text-gray-400 text-sm'>August 20, 2022</span>
                 </div>
             </div>
