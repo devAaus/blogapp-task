@@ -73,3 +73,11 @@ export const blogs = [
 
 
 ]
+
+export const users = [
+    {
+        id: '1',
+        name: 'Tracey Wilson',
+        img: ''
+    }
+]
