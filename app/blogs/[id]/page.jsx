@@ -55,7 +55,7 @@ const SingleBlog = ({ params }) => {
                         {users.map(user => {
                             if (user.id === comment.userId) {
                                 return (
-                                    <UserCard user={user} />
+                                    <UserCard key={user.id} user={user} />
                                 );
                             }
                         })}
