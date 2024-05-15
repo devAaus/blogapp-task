@@ -12,7 +12,7 @@ const BlogCard = ({ b }) => {
         <div className='relative p-4 border border-gray-800 rounded-xl shadow-xl w-full h-[430px]'>
 
             {/* blog image */}
-            <div className='w-[280px] h-44 overflow-hidden rounded-xl'>
+            <div className='w-[100%] h-44 overflow-hidden rounded-xl'>
                 <Image src={b.img} alt='image' width={600} height={200} />
             </div>
 

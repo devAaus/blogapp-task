@@ -21,7 +21,7 @@ const SingleBlog = ({ params }) => {
                     {blog.category}
                 </span>
 
-                <h1 className='text-5xl font-semibold'>
+                <h1 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>
                     {blog.title}
                 </h1>
 
@@ -32,11 +32,11 @@ const SingleBlog = ({ params }) => {
                 </div>
             </div>
 
-            <div className='w-[800px] h-[500px] overflow-hidden rounded-xl mx-auto'>
+            <div className='w-full h-[200px] md:h-[500px] overflow-hidden rounded-xl mx-auto'>
                 <Image src={blog.img} alt='image' width={1000} height={600} />
             </div>
 
-            <div className='mt-8 text-lg text-gray-400'>
+            <div className='mt-8 text-sm md:text-lg text-gray-300'>
                 <div dangerouslySetInnerHTML={{ __html: blog.desc }} />
             </div>
 
@@ -60,7 +60,9 @@ const SingleBlog = ({ params }) => {
                             }
                         })}
 
-                        <p className='text-gray-100 pl-12 -mt-2'>{comment.desc}</p>
+                        <p className='text-gray-100 pl-7 md:pl-12 mt-0 md:-mt-2 text-sm md:text-lg'>
+                            {comment.desc}
+                        </p>
 
                     </div>
                 ))}

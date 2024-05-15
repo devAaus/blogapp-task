@@ -18,9 +18,8 @@ const Blogs = ({ searchParams }) => {
     return (
         <main className='w-full px-4 py-12'>
 
-            <div className='px-2 py-6 flex justify-between'>
+            <div className='px-2 py-6 flex flex-col md:flex-row gap-2 justify-between'>
                 <h1 className='text-3xl font-bold'>All Blogs</h1>
-
 
                 {/* search bar */}
                 <SearchBox />
@@ -28,7 +27,7 @@ const Blogs = ({ searchParams }) => {
 
 
             {/* blog cards */}
-            <div className='grid grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {blog.map((b) => (
                     <BlogCard key={b.id} b={b} />
                 ))}
