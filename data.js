@@ -1,6 +1,7 @@
 export const blogs = [
     {
         id: 1,
+        userId: 2,
         title: 'The Impact of Technology on the Workplace: How Technology is Changing',
         img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         category: 'Technology',
@@ -9,6 +10,7 @@ export const blogs = [
 
     {
         id: 2,
+        userId: 1,
         title: 'The Future of Artificial Intelligence in Business',
         img: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         category: 'Technology',
@@ -17,6 +19,7 @@ export const blogs = [
 
     {
         id: 3,
+        userId: 1,
         title: 'The Rise of Remote Work: Challenges and Opportunities',
         img: 'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D',
         category: 'Business',
@@ -25,6 +28,7 @@ export const blogs = [
 
     {
         id: 4,
+        userId: 2,
         title: 'The Role of Blockchain Technology in Supply Chain Management',
         img: 'https://images.unsplash.com/photo-1516245834210-c4c142787335?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJsb2NrY2hhaW58ZW58MHx8MHx8fDA%3D',
         category: 'Technology',
@@ -33,6 +37,7 @@ export const blogs = [
 
     {
         id: 5,
+        userId: 3,
         title: 'The Impact of Big Data on Business Decision Making',
         img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJpZyUyMGRhdGF8ZW58MHx8MHx8fDA%3D',
         category: 'Business',
@@ -41,6 +46,7 @@ export const blogs = [
 
     {
         id: 8,
+        userId: 2,
         title: 'The Impact of Artificial Intelligence on Healthcare',
         img: 'https://images.unsplash.com/photo-1666887360974-5cab0bd3ef52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         category: 'Healthcare',
@@ -49,6 +55,7 @@ export const blogs = [
 
     {
         id: 16,
+        userId: 3,
         title: 'The Future of Retail: Trends and Innovations',
         img: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGZ1dHVyZSUyMG9mJTIwcmV0YWlsJTIwc2FsZXN8ZW58MHx8MHx8fDA%3D',
         category: 'Business',
@@ -57,6 +64,7 @@ export const blogs = [
 
     {
         id: 6,
+        userId: 2,
         title: 'The Evolution of Cloud Computing: Trends and Future Outlook',
         img: 'https://images.unsplash.com/photo-1629904853716-f0bc54eea481?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D',
         category: 'Technology',
@@ -65,6 +73,7 @@ export const blogs = [
 
     {
         id: 14,
+        userId: 1,
         title: 'The Role of Data Analytics in Healthcare: Improving Patient Outcomes',
         img: 'https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         category: 'Healthcare',
@@ -76,8 +85,18 @@ export const blogs = [
 
 export const users = [
     {
-        id: '1',
+        id: 1,
         name: 'Tracey Wilson',
-        img: ''
+        img: 'https://images.unsplash.com/photo-1715423058726-ddea1ec51b66?q=80&w=1947&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+        id: 2,
+        name: 'Jason Francisco',
+        img: 'https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+        id: 3,
+        name: 'Alexa Johnson',
+        img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
 ]

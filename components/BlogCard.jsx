@@ -1,8 +1,11 @@
+import { users } from '@/data';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const BlogCard = ({ b }) => {
+
+    const user = users.find(user => user.id === b.userId);
 
     return (
         <div className='relative p-4 border border-gray-800 rounded-xl shadow-xl w-full h-[430px]'>
@@ -24,9 +27,11 @@ const BlogCard = ({ b }) => {
                 </Link>
 
                 <div className='absolute bottom-4 flex items-center gap-4'>
-                    <Image src='https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fHww' alt='avatar' width={30} height={30} className='rounded-full' />
+                    <div className='w-10 h-10 overflow-hidden rounded-full'>
+                        <Image src={user.img} alt='avatar' width={40} height={40} className='rounded-full' />
+                    </div>
 
-                    <span className='text-gray-400 text-sm '>Jason Francisco</span>
+                    <span className='text-gray-400 text-sm '>{user.name}</span>
                     <span className='text-gray-400 text-sm'>August 20, 2022</span>
                 </div>
             </div>

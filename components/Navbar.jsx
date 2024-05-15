@@ -35,16 +35,7 @@ const Navbar = () => {
                ))}
             </div>
 
-            <form className=' rounded-xl bg-[#242434] flex items-center'>
-               <input type="text" placeholder='Search....' className='px-2 py-1 bg-transparent' />
 
-               <button
-                  type='submit'
-                  className='px-2'
-               >
-                  <FaSearch />
-               </button>
-            </form>
          </div>
       </nav>
    )
