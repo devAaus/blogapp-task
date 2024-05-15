@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body className="font-inter bg-[#181A2A] text-white">
-            <div className="max-w-screen-xl mx-auto">
+            <div className="max-w-screen-lg mx-auto">
                <Navbar />
                {children}
             </div>

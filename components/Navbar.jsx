@@ -24,14 +24,14 @@ const links = [
 
 const Navbar = () => {
    return (
-      <nav className=''>
-         <div className='flex items-center justify-between py-4'>
+      <nav className='py-6'>
+         <div className='flex items-center justify-between'>
 
-            <Image src='/logo.png' alt='logo' width={150} height={150} />
+            <Image src='/logo.png' alt='logo' width={120} height={120} />
 
             <div className='flex items-center justify-center gap-8'>
                {links.map((li) => (
-                  <Link href={li.path} key={li.id} className='text-base font-normal'>{li.name}</Link>
+                  <Link href={li.path} key={li.id} className='text-sm font-normal'>{li.name}</Link>
                ))}
             </div>
 
