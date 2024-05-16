@@ -56,7 +56,7 @@ const socials = [
 const Footer = () => {
     return (
         <footer>
-            <div class=" mt-12 mb-4 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <div className=" mt-12 mb-4 px-4 overflow-hidden sm:px-6 lg:px-8">
                 {/* <div className='flex items-center justify-center gap-4 md:gap-8'>
                     {links.map((li) => (
                         <Link
@@ -69,17 +69,16 @@ const Footer = () => {
                     ))}
                 </div> */}
 
-                <div class="mt-8 flex justify-center space-x-6">
+                <div className="mt-8 flex justify-center space-x-6">
                     {socials.map((s) => (
-                        <Link key={s.id} href={s.path} class="text-gray-400 hover:text-gray-500">
-                            <span class="sr-only">{s.name}</span>
+                        <Link key={s.id} href={s.path} className="text-gray-400 hover:text-gray-500">
                             {s.icon}
                         </Link>
                     ))}
                 </div>
 
 
-                <p class="mt-8 text-center text-base text-gray-400">
+                <p className="mt-8 text-center text-base text-gray-400">
                     &copy; 2024 MetaBlog, Inc. All rights reserved.
                 </p>
             </div>

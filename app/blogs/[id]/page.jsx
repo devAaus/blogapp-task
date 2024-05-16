@@ -11,7 +11,6 @@ const SingleBlog = ({ params }) => {
     const user = users.find(user => user.id === blog.userId);
 
     const comment = comments.filter(comment => comment.postId === blog.id);
-    console.log(comment);
 
     return (
         <main className='w-full px-4 py-12'>
